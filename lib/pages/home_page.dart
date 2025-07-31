@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:habittute/theme/theme_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:habittute/components/my_drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,16 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      drawer: Drawer(
-        backgroundColor: Theme.of(context).colorScheme.surface,
-        child: Center(
-          child: CupertinoSwitch(
-            value: Provider.of<ThemeProvider>(context).isDarkMode,
-            onChanged: (value) =>
-              Provider.of<ThemeProvider>(context, listen: false).toogleTheme()
-          ),
-        ),
-      ),
+      drawer: const MyDrawer(),
     );
   }
 }
