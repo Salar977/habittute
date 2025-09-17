@@ -87,7 +87,7 @@ class HabitDatabase extends ChangeNotifier {
             (date) =>
                 date.year == DateTime.now().year &&
                 date.month == DateTime.now().month &&
-                date.second == DateTime.now().second,
+                date.day == DateTime.now().day,
           );
         }
 

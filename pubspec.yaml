@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_heatmap_calendar: ^1.0.5
+  flutter_slidable: ^4.0.1
   isar:
     hosted: https://pub.isar-community.dev
     version: 3.1.8
